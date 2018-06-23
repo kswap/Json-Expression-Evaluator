@@ -34,9 +34,11 @@ Example:
 
 Exp: "$mattress.name == 'king' AND $cost == 100.0"
 Json: {"color":"red","size":10,"cost":100.0,"mattress":{"name":"king"},"big":true,"legs":[{"length":4}]}
+
+
 Output: true
         
         
 Exp: "NOT EXISTS $color"
 Json: {"color":"red","size":10,"cost":100.0,"mattress":{"name":"king"},"big":true,"legs":[{"length":4}]} 
-output: false
+Output: false
